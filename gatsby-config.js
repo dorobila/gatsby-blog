@@ -23,6 +23,12 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-reading-time`,
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              colorTheme: 'Dark+ (default dark)'
+            }
+          }
         ],
       },
     },
