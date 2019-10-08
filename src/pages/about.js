@@ -7,7 +7,7 @@ const About = () => {
   return (
     <Layout>
       <h1>About</h1>
-      <Link to="contact"> Contact</Link>
+      <Link to="/contact"> Contact</Link>
     </Layout>
   )
 }
