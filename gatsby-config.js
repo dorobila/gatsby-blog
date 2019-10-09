@@ -12,10 +12,20 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false,
+            }
+
+          },
           `gatsby-remark-reading-time`,
           {
             resolve: `gatsby-remark-vscode`,
