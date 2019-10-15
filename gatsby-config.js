@@ -4,6 +4,7 @@ module.exports = {
     author: 'Daniel Dorobantu'
   },
   plugins: [
+    `gatsby-plugin-emotion`,
     `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-source-filesystem',
